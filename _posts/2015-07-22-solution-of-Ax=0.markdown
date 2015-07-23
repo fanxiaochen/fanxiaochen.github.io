@@ -26,14 +26,14 @@ Obviously the homogenous system always has the solution $x = 0$. But what about 
 
 ###**Some Thoughts** ###
 
-> ***Q***: Can $Ax = 0 \Rightarrow x = 0$ be true?
-> ***A***: From the solution part, we could see clearly that it\'s false.
+> - ***Q***: Can $Ax = 0 \Rightarrow x = 0$ be true? <br>
+> - ***A***: From the solution part, we could see clearly that it\'s false.
 
-> ***Q***:  For $M(Ax-b) = 0$, how to solve $x$?
-> ***A***:  From above question, we couldn\'t get $Ax=b$ directly, except $M^{-1}$ exists(**case 1**) or **case 3.2**. So we need to expand the equation into $MAx = Mb$ and solve the form as $ \tilde{A} x= \tilde{b}$.
+> - ***Q***: For $M(Ax-b) = 0$, how to solve $x$? <br>
+> - ***A***: From above question, we couldn\'t get $Ax=b$ directly, except $M^{-1}$ exists(**case 1**) or **case 3.2**. So we need to expand the equation into $MAx = Mb$ and solve the form as $ \tilde{A} x= \tilde{b}$.
 
-> ***Q***:  For the form $Ax=0$, if it\'s overdetermined, how about least squares?
-> ***A***: No matter whether it is overdetermined, the least squares is meaningless since the result will always be $x = 0$.
+> - ***Q***: For the form $Ax=0$, if it\'s overdetermined, how about least squares? <br>
+> - ***A***: No matter whether it is overdetermined, the least squares is meaningless since the result will always be $x = 0$.
 
 
 ----------
