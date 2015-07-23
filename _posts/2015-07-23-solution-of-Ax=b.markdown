@@ -15,7 +15,7 @@ Given $Ax=b$, where$A\in R^{m\times n}$, $x\in R^{n}$,  $b \in R^{m}$, what is t
 
 ###**Solution** ###
 
-It has a little difference from $Ax=0$. There may be no solution or unique solution and more. What we should first think about here is augmented matrix $\tilde{A} = [ A | b ]$ and to compare $rank(\tilde{A})$ and $rank(A)$.
+It has a little difference from $Ax=0$. There may be no solution or unique solution and more. What we should first think about here is augmented matrix $\tilde{A} = [ A \| b ]$ and to compare $rank(\tilde{A})$ and $rank(A)$.
 
  - if $rank(\tilde{A}) > rank(A)$, there\'ll be no solution here.
  - if  $rank(\tilde{A}) = rank(A)$, there exists at least one solution.
@@ -34,7 +34,7 @@ So let\'s look about the case of existing solutions, which is much similar to th
 
 What if there\'s no solution for $Ax = b$ in theory, namely $rank(\tilde{A}) > rank(A)$? That\'s what least squares does.
 
-If $A$ is overdetermined, we could use least squares to get an approximate solution by converting $Ax = b$ to an optimization problem, which means $E(x) = ||Ax - b||^{2}$. The following shows least squares figure:
+If $A$ is overdetermined, we could use least squares to get an approximate solution by converting $Ax = b$ to an optimization problem, which means $E(x) = \|Ax - b\|^{2}$. The following shows least squares figure:
 
 ![Least Squares Approximation](https://upload.wikimedia.org/wikipedia/commons/3/3a/Linear_regression.svg)
 
