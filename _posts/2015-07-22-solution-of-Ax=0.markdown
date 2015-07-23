@@ -23,23 +23,22 @@ Obviously the homogenous system always has the solution $x = 0$. But what about 
 >  - if $m > n$, then $rank(A) <= n < m$. For $rank(A) = n$, the system has an unique solution, which is $x = 0$. While $rank(A) < n$, it degenerates to be indeterminate with non-trivial solutions.
 
 ----------
+
 ###**Some Thoughts** ###
 
 
 > ***Q***: Can $Ax = 0 \Rightarrow x = 0$ be true?
-
 > ***A***: From the solution part, we could see clearly that it's false.
 
 > ***Q***:  For $M(Ax-b) = 0$, how to solve $x$?
-
 > ***A***:  From above question, we couldn't get $Ax=b$ directly, except $M^{-1}$ exists(**case 1**) or **case 3.2**. So we need to expand the equation into $MAx = Mb$ and solve the form as $ \tilde{A} x= \tilde{b}$.
 
 > ***Q***:  For the form $Ax=0$, if it's overdetermined, how about least squares?
-
 > ***A***: No matter whether it is overdetermined, the least squares is meaningless since the result will always be $x = 0$.
 
 
 ----------
+
 ###**References** ###
 
  1. [http://www.math.ku.edu/~lerner/LAnotes/Chapter5.pdf](http://www.math.ku.edu/~lerner/LAnotes/Chapter5.pdf)
