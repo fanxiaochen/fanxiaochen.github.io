@@ -19,8 +19,8 @@ Obviously the homogenous system always has the solution $x = 0$. But what about 
 > 1. if $m = n$ and $rank(A) = n$, $x = 0$
 > 2. if $m = n$ and $rank(A) < n$,  there exists at least one free variable, the number of which is $n - rank(A)$
 > 3. if $m \neq n$ and $rank(A)$ must not be more than $min(m, n)$.
->  - if $m < n$, then $rank(A) <= m < n$, so the equations will be indeterminate, which means there exists non-trivial solutions.
->  - if $m > n$, then $rank(A) <= n < m$. For $rank(A) = n$, the system has an unique solution, which is $x = 0$. While $rank(A) < n$, it degenerates to be indeterminate with non-trivial solutions.
+>  - if $m < n$, then $rank(A) <= m < n$, so the equations will be undetermined, which means there exists non-trivial solutions.
+>  - if $m > n$, then $rank(A) <= n < m$. For $rank(A) = n$, the system has an unique solution, which is $x = 0$. While $rank(A) < n$, it degenerates to be undetermined with non-trivial solutions.
 
 ----------
 
