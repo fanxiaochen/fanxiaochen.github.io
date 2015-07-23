@@ -13,6 +13,7 @@ Given $Ax=0$, where$A\in R^{m\times n}$，$x\in R^{n}$, What is the solution?
 
 ###**Solution** ###
 Obviously the homogenous system always has the solution $x = 0$. But what about other solutions?
+
 > 1. if $m = n$ and $rank(A) = n$, $x = 0$
 > 2. if $m = n$ and $rank(A) < n$,  there exists at least one free variable, the number of which is $n - rank(A)$
 > 3. if $m \neq n$ and $rank(A)$ must not be more than $min(m, n)$.
@@ -21,6 +22,7 @@ Obviously the homogenous system always has the solution $x = 0$. But what about 
 
 ----------
 ###**Some Thoughts** ###
+
 > ***Q***: Can $Ax = 0 \Rightarrow x = 0$ be true?
 > ***A***: From the solution part, we could see clearly that it's false.
 
