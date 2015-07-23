@@ -34,7 +34,7 @@ So let\'s look about the case of existing solutions, which is much similar to th
 
 What if there\'s no solution for $Ax = b$ in theory, namely $rank(\tilde{A}) > rank(A)$? That\'s what least squares does.
 
-If $A$ is overdetermined, we could use least squares to get an approximate solution by converting $Ax = b$ to an optimization problem, which means $E(x) = \|\|Ax - b\|\|^{2}$. The following shows least squares figure:
+If $A$ is overdetermined, we could use least squares to get an approximate solution by converting $Ax = b$ to an optimization problem, which means $E(x) = \|Ax - b\|^{2}$. The following shows least squares figure:
 
 ![Least Squares Approximation](https://upload.wikimedia.org/wikipedia/commons/3/3a/Linear_regression.svg)
 
