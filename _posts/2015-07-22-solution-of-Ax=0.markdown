@@ -5,20 +5,20 @@ date:   2015-07-22 22:42:50
 categories: math matrix
 ---
 
-+###**Problem** ###
-+Given $Ax=0$, where$A\in R^{m\times n}$，$x\in R^{n}$, What is the solution?
-+
-+
-+----------
-+
-+###**Solution** ###
-+Obviously the homogenous system always has the solution $x = 0$. But what about other solutions?
-+
-+> 1. if $m = n$ and $rank(A) = n$, $x = 0$
-+> 2. if $m = n$ and $rank(A) < n$,  there exists at least one free variable, the number of which is $n - rank(A)$
-+> 3. if $m \neq n$ and $rank(A)$ must not be more than $min(m, n)$.
-+>  - if $m < n$, then $rank(A) <= m < n$, so the equations will be indeterminate, which means there exists non-trivial solutions.
-+>  - if $m > n$, then $rank(A) <= n < m$. For $rank(A) = n$, the system has an unique solution, which is a least square solution because of overdetermined equations(here the solution is still $x = 0$). While $rank(A) < n$, it degenerates to be indeterminate with non-trivial solutions.
-+
-+
-+----------
+###**Problem** ###
+Given $Ax=0$, where$A\in R^{m\times n}$，$x\in R^{n}$, What is the solution?
+
+
+----------
+
+###**Solution** ###
+Obviously the homogenous system always has the solution $x = 0$. But what about other solutions?
+
+> 1. if $m = n$ and $rank(A) = n$, $x = 0$
+> 2. if $m = n$ and $rank(A) < n$,  there exists at least one free variable, the number of which is $n - rank(A)$
+> 3. if $m \neq n$ and $rank(A)$ must not be more than $min(m, n)$.
+>  - if $m < n$, then $rank(A) <= m < n$, so the equations will be indeterminate, which means there exists non-trivial solutions.
+>  - if $m > n$, then $rank(A) <= n < m$. For $rank(A) = n$, the system has an unique solution, which is a least square solution because of overdetermined equations(here the solution is still $x = 0$). While $rank(A) < n$, it degenerates to be indeterminate with non-trivial solutions.
+
+
+----------
