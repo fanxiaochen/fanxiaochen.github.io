@@ -25,28 +25,28 @@ Think about the following equations:
 
 \begin{equation}
  \left[\begin{array}{cc}1 & 0 & 0 \end{array}\right]
-\left[\begin{array}{cc}
+\left[\begin{bmatrix}
 m_{11} & m_{12} & m_{13} \\
 m_{21} & m_{22} & m_{23} \\
-m_{31} & m_{32} & m_{33}\end{array} \right] = 
+m_{31} & m_{32} & m_{33}\end{bmatrix} \right] = 
 \left[\begin{array}{cc}m_{11} & m_{12} & m_{13} \end{array}\right]
 \end{equation}
 
 \begin{equation}
  \left[\begin{array}{cc}0 & 1 & 0 \end{array}\right]
-\left[\begin{array}{cc}
+\left[\begin{bmatrix}
 m_{11} & m_{12} & m_{13} \\
 m_{21} & m_{22} & m_{23} \\
-m_{31} & m_{32} & m_{33}\end{array} \right] = 
+m_{31} & m_{32} & m_{33}\end{bmatrix} \right] = 
 \left[\begin{array}{cc}m_{21} & m_{22} & m_{23} \end{array}\right]
 \end{equation}
 
 \begin{equation}
  \left[\begin{array}{cc}0 & 0 & 1 \end{array}\right]
-\left[\begin{array}{cc}
+\left[\begin{bmatrix}
 m_{11} & m_{12} & m_{13} \\
 m_{21} & m_{22} & m_{23} \\
-m_{31} & m_{32} & m_{33}\end{array} \right] = 
+m_{31} & m_{32} & m_{33}\end{bmatrix} \right] = 
 \left[\begin{array}{cc}m_{31} & m_{32} & m_{33} \end{array}\right]
 \end{equation}
 
@@ -74,35 +74,42 @@ From vector rules, we could get $\overrightarrow{\rm O_nP_n} = \overrightarrow{\
 Matrix form:
 \begin{equation}
 \left[\begin{array}{cc}x_n & y_n\end{array}\right]
-\left[\begin{array}{cc}
+\left[\begin{bmatrix}
 m_1 & m_2 \\
 n_1 & n_2
-\end{array}\right] = 
+\end{bmatrix}\right] = 
 \left[\begin{array}{cc}-o_1 & -o_2\end{array}\right] + 
 \left[\begin{array}{cc}x_g & y_g\end{array}\right]
-\left[\begin{array}{cc}
+\left[\begin{bmatrix}
 1 & 0 \\
 0 & 1
-\end{array}\right]
+\end{bmatrix}\right]
 \end{equation}
 
 Homogeneous coordinates:
 \begin{equation}
 \left[\begin{array}{cc}x_n & y_n & 1\end{array}\right]
-\left[\begin{array}{cc}
+\left[\begin{bmatrix}
 m_1 & m_2 & 0 \\
 n_1 & n_2 & 0 \\
 0 & 0 & 1
-\end{array}\right] = 
+\end{bmatrix}\right] = 
 \left[\begin{array}{cc}x_g & y_g & 1\end{array}\right]
-\left[\begin{array}{cc}
+\left[\begin{bmatrix}
 1 & 0 & 0 \\ 
 0 & 1 & 0 \\
 -o_1 & -o_2 & 1
-\end{array}\right]
+\end{bmatrix}\right]
 \end{equation}
 
 So we could solve it and get the transform matrix $T$, let $P_n = P_g T$
+
+
+----------
+
+
+## References ##
+- 3d primer for graphics and game development(3d数学基础：图形与游戏开发)
 
 
 
