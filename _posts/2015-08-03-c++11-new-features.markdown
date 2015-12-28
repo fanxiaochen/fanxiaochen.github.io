@@ -2,7 +2,7 @@
 layout: post
 title:  "C++11 New Features"
 date:   2015-08-03 22:17:34
-categories: c++
+categories: cpp
 ---
 
 Summarize some frequently-used new features of C++11.
