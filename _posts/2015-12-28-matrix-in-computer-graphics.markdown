@@ -9,7 +9,7 @@ categories: math matrix
 
 The matrix means **transform** in computer graphics. We could use matrix to change the position of object in a reference frame. 
 
-In graphics we mostly consider about linear transform and affine transform. Rotation, scaling and orthogonal projection are linear transform. By adding **translation**, they'll be affine transforms.
+In graphics we mostly consider about linear transform and affine transform. Rotation, scaling and orthogonal projection are linear transform. By adding **translation**, they\'ll be affine transforms.
 
 What we need to take care is that the **transform** is not an absolute value but a **relative** one(in the world perspective) based on the **reference frame**. That is to say if we need to compute a transform of object using matrix, first thing to be considered is in which reference frame the object is. **The transform, the current position and the position after transform are all in one reference frame.**
 
@@ -65,7 +65,7 @@ If the matrix is a transform, we could see that the three base vectors are exact
 
 We only talked about transforms in the same reference frame before. Now we need to think about transforms in different Frames which is an important problem in computer graphics.
 
-Given a 2d reference frame named $F_g$,  the base vectors are $\alpha_1 = \begin{array}{}[1 & 0]\end{array}$, $\alpha_2 = \begin{array}{}[0 & 1]\end{array}$ and the original point is $O_g = \begin{array}{}[0 & 0]\end{array}$, the new reference frame named $F_n$, the new base vectors are $\beta_1 = \begin{array}{}[m_1 & m_2]\end{array}$, $\beta_2 = \begin{array}{}[n_1 & n_2]\end{array}$ and the original point is $O_n = \begin{array}{}[o_1 & o_2]\end{array}$ which are all measured in the given frame $F_g$. Now given a point $P_g$ in $F_g$, what's the value $P_n$ in $F_n$?
+Given a 2d reference frame named $F_g$,  the base vectors are $\alpha_1 = \begin{array}{}[1 & 0]\end{array}$, $\alpha_2 = \begin{array}{}[0 & 1]\end{array}$ and the original point is $O_g = \begin{array}{}[0 & 0]\end{array}$, the new reference frame named $F_n$, the new base vectors are $\beta_1 = \begin{array}{}[m_1 & m_2]\end{array}$, $\beta_2 = \begin{array}{}[n_1 & n_2]\end{array}$ and the original point is $O_n = \begin{array}{}[o_1 & o_2]\end{array}$ which are all measured in the given frame $F_g$. Now given a point $P_g$ in $F_g$, what\'s the value $P_n$ in $F_n$?
 
 This problem is the basic setting of this part.
 
@@ -112,7 +112,7 @@ So we could solve it and get the transform matrix $T$, let $P_n = P_g T$
 1 & 0 \\
 0 & 1
 \end{bmatrix}
-\begin{equation}
+\end{equation}
 
 
 ----------
