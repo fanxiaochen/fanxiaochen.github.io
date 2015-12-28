@@ -75,13 +75,13 @@ Matrix form:
 \begin{equation}
 \left[\begin{array}{}x_n & y_n\end{array}\right]
 \left[\begin{array}{}
-m_1 & m_2  \\
+m_1 & m_2  \\\\
 n_1 & n_2
 \end{array}\right] = 
 \left[\begin{array}{}-o_1 & -o_2\end{array}\right] + 
 \left[\begin{array}{}x_g & y_g\end{array}\right]
 \left[\begin{array}{}
-1 & 0\\
+1 & 0\\\\
 0 & 1
 \end{array}\right]
 \end{equation}
@@ -90,14 +90,14 @@ Homogeneous coordinates:
 \begin{equation}
 \left[\begin{array}{}x_n & y_n & 1\end{array}\right]
 \left[\begin{array}{}
-m_1 & m_2 & 0\\
-n_1 & n_2 & 0 \\
+m_1 & m_2 & 0\\\\
+n_1 & n_2 & 0 \\\\
 0 & 0 & 1
 \end{array}\right] = 
 \left[\begin{array}{}x_g & y_g & 1\end{array}\right]
 \left[\begin{array}{}
-1 & 0 & 0\\
-0 & 1 & 0 \\
+1 & 0 & 0\\\\
+0 & 1 & 0 \\\\
 -o_1 & -o_2 & 1
 \end{array}\right]
 \end{equation}
