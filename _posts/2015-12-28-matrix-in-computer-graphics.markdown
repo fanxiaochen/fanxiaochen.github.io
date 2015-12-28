@@ -51,7 +51,7 @@ m_{31} & m_{32} & m_{33}\end{array} \right] =
 
 If the matrix is a transform, we could see that the three base vectors are exactly the same as three rows of matrix after the transform. **In other words,  the matrix could be considered as three vectors which are transformed from three base vectors in the original reference frame.**
 
-
+![Literal Meaning](https://github.com/fanxiaochen/fanxiaochen.github.io/tree/master/css/pics/matrix-literal-meaning.jpg)
 ----------
 ## Transform Between Different Reference Frames##
 
