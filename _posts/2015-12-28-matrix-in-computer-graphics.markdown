@@ -24,30 +24,30 @@ What does the entry values mean in matrix?
 Think about the following equations:
 
 \begin{equation}
- \left[\begin{array}{}1 & 0 & 0 \end{array}\right]
-\left[\begin{array}{}
-m_{11} & m_{12} & m_{13}\\
-m_{21} & m_{22} & m_{23}\\
+ \left[\begin{array}{cc}1 & 0 & 0 \end{array}\right]
+\left[\begin{array}{cc}
+m_{11} & m_{12} & m_{13} \\
+m_{21} & m_{22} & m_{23} \\
 m_{31} & m_{32} & m_{33}\end{array} \right] = 
-\left[\begin{array}{}m_{11} & m_{12} & m_{13} \end{array}\right]
+\left[\begin{array}{cc}m_{11} & m_{12} & m_{13} \end{array}\right]
 \end{equation}
 
 \begin{equation}
- \left[\begin{array}{}0 & 1 & 0 \end{array}\right]
-\left[\begin{array}{}
-m_{11} & m_{12} & m_{13}\\
-m_{21} & m_{22} & m_{23}\\
+ \left[\begin{array}{cc}0 & 1 & 0 \end{array}\right]
+\left[\begin{array}{cc}
+m_{11} & m_{12} & m_{13} \\
+m_{21} & m_{22} & m_{23} \\
 m_{31} & m_{32} & m_{33}\end{array} \right] = 
-\left[\begin{array}{}m_{21} & m_{22} & m_{23} \end{array}\right]
+\left[\begin{array}{cc}m_{21} & m_{22} & m_{23} \end{array}\right]
 \end{equation}
 
 \begin{equation}
- \left[\begin{array}{}0 & 0 & 1 \end{array}\right]
-\left[\begin{array}{}
-m_{11} & m_{12} & m_{13}\\
-m_{21} & m_{22} & m_{23}\\
+ \left[\begin{array}{cc}0 & 0 & 1 \end{array}\right]
+\left[\begin{array}{cc}
+m_{11} & m_{12} & m_{13} \\
+m_{21} & m_{22} & m_{23} \\
 m_{31} & m_{32} & m_{33}\end{array} \right] = 
-\left[\begin{array}{}m_{31} & m_{32} & m_{33} \end{array}\right]
+\left[\begin{array}{cc}m_{31} & m_{32} & m_{33} \end{array}\right]
 \end{equation}
 
 If the matrix is a transform, we could see that the three base vectors are exactly the same as three rows of matrix after the transform. **In other words,  the matrix could be considered as three vectors which are transformed from three base vectors in the original reference frame.**
@@ -73,31 +73,31 @@ From vector rules, we could get $\overrightarrow{\rm O_nP_n} = \overrightarrow{\
 
 Matrix form:
 \begin{equation}
-\left[\begin{array}{}x_n & y_n\end{array}\right]
-\left[\begin{array}{}
-m_1 & m_2  \\\\
+\left[\begin{array}{cc}x_n & y_n\end{array}\right]
+\left[\begin{array}{cc}
+m_1 & m_2 \\
 n_1 & n_2
 \end{array}\right] = 
-\left[\begin{array}{}-o_1 & -o_2\end{array}\right] + 
-\left[\begin{array}{}x_g & y_g\end{array}\right]
-\left[\begin{array}{}
-1 & 0\\\\
+\left[\begin{array}{cc}-o_1 & -o_2\end{array}\right] + 
+\left[\begin{array}{cc}x_g & y_g\end{array}\right]
+\left[\begin{array}{cc}
+1 & 0 \\
 0 & 1
 \end{array}\right]
 \end{equation}
 
 Homogeneous coordinates:
 \begin{equation}
-\left[\begin{array}{}x_n & y_n & 1\end{array}\right]
-\left[\begin{array}{}
-m_1 & m_2 & 0\\\\
-n_1 & n_2 & 0 \\\\
+\left[\begin{array}{cc}x_n & y_n & 1\end{array}\right]
+\left[\begin{array}{cc}
+m_1 & m_2 & 0 \\
+n_1 & n_2 & 0 \\
 0 & 0 & 1
 \end{array}\right] = 
-\left[\begin{array}{}x_g & y_g & 1\end{array}\right]
-\left[\begin{array}{}
-1 & 0 & 0\\\\
-0 & 1 & 0 \\\\
+\left[\begin{array}{cc}x_g & y_g & 1\end{array}\right]
+\left[\begin{array}{cc}
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\
 -o_1 & -o_2 & 1
 \end{array}\right]
 \end{equation}
