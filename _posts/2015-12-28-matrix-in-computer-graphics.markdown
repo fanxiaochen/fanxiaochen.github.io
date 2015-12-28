@@ -28,7 +28,8 @@ Think about the following equations:
 \begin{bmatrix}
 m_{11} & m_{12} & m_{13} \\
 m_{21} & m_{22} & m_{23} \\
-m_{31} & m_{32} & m_{33}\end{bmatrix} = 
+m_{31} & m_{32} & m_{33}
+\end{bmatrix} = 
 \left[\begin{array}{cc}m_{11} & m_{12} & m_{13} \end{array}\right]
 \end{equation}
 
@@ -37,7 +38,8 @@ m_{31} & m_{32} & m_{33}\end{bmatrix} =
 \begin{bmatrix}
 m_{11} & m_{12} & m_{13} \\
 m_{21} & m_{22} & m_{23} \\
-m_{31} & m_{32} & m_{33}\end{bmatrix} = 
+m_{31} & m_{32} & m_{33}
+\end{bmatrix} = 
 \left[\begin{array}{cc}m_{21} & m_{22} & m_{23} \end{array}\right]
 \end{equation}
 
@@ -46,7 +48,8 @@ m_{31} & m_{32} & m_{33}\end{bmatrix} =
 \begin{bmatrix}
 m_{11} & m_{12} & m_{13} \\
 m_{21} & m_{22} & m_{23} \\
-m_{31} & m_{32} & m_{33}\end{bmatrix} = 
+m_{31} & m_{32} & m_{33}
+\end{bmatrix} = 
 \left[\begin{array}{cc}m_{31} & m_{32} & m_{33} \end{array}\right]
 \end{equation}
 
@@ -104,7 +107,7 @@ n_1 & n_2 & 0 \\
 
 So we could solve it and get the transform matrix $T$, let $P_n = P_g T$
 
-
+$sss \\ ss$
 ----------
 
 
