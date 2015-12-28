@@ -5,7 +5,6 @@ date:   2015-12-28 18:38:50
 categories: math matrix
 ---
 
-----------
 ## The Geometric Meaning of Matrix ##
 
 The matrix means **transform** in computer graphics. We could use matrix to change the position of object in a reference frame. 
@@ -14,7 +13,9 @@ In graphics we mostly consider about linear transform and affine transform. Rota
 
 What we need to take care is that the **transform** is not an absolute value but a **relative** one(in the world perspective) based on the **reference frame**. That is to say if we need to compute a transform of object using matrix, first thing to be considered is in which reference frame the object is. **The transform, the current position and the position after transform are all in one reference frame.**
 
+
 ----------
+
 
 ## The Literal Meaning of Matrix ##
 
@@ -51,8 +52,12 @@ m_{31} & m_{32} & m_{33}\end{array} \right] =
 
 If the matrix is a transform, we could see that the three base vectors are exactly the same as three rows of matrix after the transform. **In other words,  the matrix could be considered as three vectors which are transformed from three base vectors in the original reference frame.**
 
-![Literal Meaning](https://github.com/fanxiaochen/fanxiaochen.github.io/tree/master/css/pics/matrix-literal-meaning.jpg)
+![](https://github.com/fanxiaochen/fanxiaochen.github.io/tree/master/css/pics/matrix-literal-meaning.jpg)
+
+
 ----------
+
+
 ## Transform Between Different Reference Frames##
 
 We only talked about transforms in the same reference frame before. Now we need to think about transforms in different Frames which is an important problem in computer graphics.
@@ -71,12 +76,14 @@ Matrix form:
 \left[\begin{array}{}x_n & y_n\end{array}\right]
 \left[\begin{array}{}
 m_1 & m_2  \\
+
 n_1 & n_2
 \end{array}\right] = 
 \left[\begin{array}{}-o_1 & -o_2\end{array}\right] + 
 \left[\begin{array}{}x_g & y_g\end{array}\right]
 \left[\begin{array}{}
 1 & 0\\
+
 0 & 1
 \end{array}\right]
 \end{equation}
@@ -86,13 +93,17 @@ Homogeneous coordinates:
 \left[\begin{array}{}x_n & y_n & 1\end{array}\right]
 \left[\begin{array}{}
 m_1 & m_2 & 0\\
+
 n_1 & n_2 & 0 \\
+
 0 & 0 & 1
 \end{array}\right] = 
 \left[\begin{array}{}x_g & y_g & 1\end{array}\right]
 \left[\begin{array}{}
 1 & 0 & 0\\
+
 0 & 1 & 0 \\
+
 -o_1 & -o_2 & 1
 \end{array}\right]
 \end{equation}
