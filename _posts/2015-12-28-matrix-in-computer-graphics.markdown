@@ -26,8 +26,8 @@ Think about the following equations:
 \begin{equation}
  \left[\begin{array}{cc}1 & 0 & 0 \end{array}\right]
 \begin{bmatrix}
-m_{11} & m_{12} & m_{13} \\
-m_{21} & m_{22} & m_{23} \\
+m_{11} & m_{12} & m_{13} \cr
+m_{21} & m_{22} & m_{23} \cr
 m_{31} & m_{32} & m_{33}
 \end{bmatrix} = 
 \left[\begin{array}{cc}m_{11} & m_{12} & m_{13} \end{array}\right]
@@ -36,8 +36,8 @@ m_{31} & m_{32} & m_{33}
 \begin{equation}
  \left[\begin{array}{cc}0 & 1 & 0 \end{array}\right]
 \begin{bmatrix}
-m_{11} & m_{12} & m_{13} \\
-m_{21} & m_{22} & m_{23} \\
+m_{11} & m_{12} & m_{13} \cr
+m_{21} & m_{22} & m_{23} \cr
 m_{31} & m_{32} & m_{33}
 \end{bmatrix} = 
 \left[\begin{array}{cc}m_{21} & m_{22} & m_{23} \end{array}\right]
@@ -46,8 +46,8 @@ m_{31} & m_{32} & m_{33}
 \begin{equation}
  \left[\begin{array}{cc}0 & 0 & 1 \end{array}\right]
 \begin{bmatrix}
-m_{11} & m_{12} & m_{13} \\
-m_{21} & m_{22} & m_{23} \\
+m_{11} & m_{12} & m_{13} \cr
+m_{21} & m_{22} & m_{23} \cr
 m_{31} & m_{32} & m_{33}
 \end{bmatrix} = 
 \left[\begin{array}{cc}m_{31} & m_{32} & m_{33} \end{array}\right]
@@ -55,7 +55,7 @@ m_{31} & m_{32} & m_{33}
 
 If the matrix is a transform, we could see that the three base vectors are exactly the same as three rows of matrix after the transform. **In other words,  the matrix could be considered as three vectors which are transformed from three base vectors in the original reference frame.**
 
-![](https://github.com/fanxiaochen/fanxiaochen.github.io/tree/master/css/pics/matrix-literal-meaning.jpg)
+![](https://fanxiaochen.github.io/css/pics/matrix-literal-meaning.jpg)
 
 
 ----------
@@ -78,13 +78,13 @@ Matrix form:
 \begin{equation}
 \left[\begin{array}{cc}x_n & y_n\end{array}\right]
 \begin{bmatrix}
-m_1 & m_2 \\
+m_1 & m_2 \cr
 n_1 & n_2
 \end{bmatrix} = 
 \left[\begin{array}{cc}-o_1 & -o_2\end{array}\right] + 
 \left[\begin{array}{cc}x_g & y_g\end{array}\right]
 \begin{bmatrix}
-1 & 0 \\
+1 & 0 \cr
 0 & 1
 \end{bmatrix}
 \end{equation}
@@ -93,26 +93,19 @@ Homogeneous coordinates:
 \begin{equation}
 \left[\begin{array}{cc}x_n & y_n & 1\end{array}\right]
 \begin{bmatrix}
-m_1 & m_2 & 0 \\
-n_1 & n_2 & 0 \\
+m_1 & m_2 & 0 \cr
+n_1 & n_2 & 0 \cr
 0 & 0 & 1
 \end{bmatrix} = 
 \left[\begin{array}{cc}x_g & y_g & 1\end{array}\right]
 \begin{bmatrix}
-1 & 0 & 0 \\ 
-0 & 1 & 0 \\
+1 & 0 & 0 \cr 
+0 & 1 & 0 \cr
 -o_1 & -o_2 & 1
 \end{bmatrix}
 \end{equation}
 
 So we could solve it and get the transform matrix $T$, let $P_n = P_g T$
-
-\begin{equation}
-\begin{bmatrix}
-1 & 0 \cr
-0 & 1 
-\end{bmatrix}
-\end{equation}
 
 
 ----------
