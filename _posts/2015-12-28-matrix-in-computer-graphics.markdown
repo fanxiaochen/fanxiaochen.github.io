@@ -68,7 +68,7 @@ This problem is the basic setting of this part.
 
 From vector rules, we could get $\overrightarrow{\rm O_nP_n} = \overrightarrow{\rm O_nO_g} + \overrightarrow{\rm O_gP_g}$, that is 
 \begin{equation}
-(x_n*\beta_1 + y_n*\beta_2) = (O_g - O_n) + (x_g*\alpha_1 + y_g*\alpha_2)
+(x_n * \beta_1 + y_n * \beta_2) = (O_g - O_n) + (x_g * \alpha_1 + y_g * \alpha_2)
 \end{equation}
 
 Matrix form:
