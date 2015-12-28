@@ -107,7 +107,10 @@ n_1 & n_2 & 0 \\
 
 So we could solve it and get the transform matrix $T$, let $P_n = P_g T$
 
-$sss \\ ss$
+$\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}$
 ----------
 
 
