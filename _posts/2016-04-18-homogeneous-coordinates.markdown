@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Matrix in Computer Graphics"
+title:  "Test in Computer Graphics"
 date:   2015-12-28 18:38:50
-categories: math matrix
+categories: math
 ---
 
 ## The Geometric Meaning of Matrix ##
