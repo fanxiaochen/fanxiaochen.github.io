@@ -19,7 +19,7 @@ Note that $x_c$ represents Cartesian coordinates and $x_h$ represents homogeneou
 
 For data more than one dimension, it's the same as above. We could see a picture from wiki to show the curve in two coordinates. 
 
-![Rational Bézier Curve – polynomial curve defined in homogeneous coordinates (blue) and its projection on plane – rational curve (red)](https://en.wikipedia.org/wiki/Homogeneous_coordinates#/media/File:RationalBezier2D.svg)
+![Rational Bézier Curve – polynomial curve defined in homogeneous coordinates (blue) and its projection on plane – rational curve (red)](https://upload.wikimedia.org/wikipedia/commons/1/12/RationalBezier2D.svg)
 
 In camera model, the position in camera ordinates has four dimension in homogeneous coordinates, which means the data is projected from 4D space to 3D space, or from volume to plane. So it can be summarized that:
 
