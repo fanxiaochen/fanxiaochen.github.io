@@ -7,115 +7,33 @@ categories: math matrix
 
 
 
-## The Geometric Meaning of Matrix ##
+**Cartesian coordinates** is what we use every day. But in computer graphics and vision fields, when using camera model, there encounters **projective coordinates**, namely **homogeneous coordinates**.
 
-The matrix means **transform** in computer graphics. We could use matrix to change the position of object in a reference frame. 
+Homogeneous coordinates has one more dimension than Cartesian coordinates when represents the same position. For example $x = 2$,
+one dimension data for a point in Cartesian coordinates, is equivalent to a line in homogeneous coordinates as $\lambda(2, 1)$ or $x/w = 2$. So we realize that the original point $x=2$ in Cartesian coordinates is the projective point at $w=1$ of the line in homogeneous coordinates.
 
-In graphics we mostly consider about linear transform and affine transform. Rotation, scaling and orthogonal projection are linear transform. By adding **translation**, they\'ll be affine transforms.
+## Geometric Meaning ##
 
-What we need to take care is that the **transform** is not an absolute value but a **relative** one(in the world perspective) based on the **reference frame**. That is to say if we need to compute a transform of object using matrix, first thing to be considered is in which reference frame the object is. **The transform, the current position and the position after transform are all in one reference frame.**
+A simple drawing shows here, to visualize the meaning of homogeneous coordinates in geometry.
 
+![Geometric Meaning of Homogeneous Coordinates](https://fanxiaochen.github.io/css/pics/homo-coords-meaning.jpg)
 
-----------
+Note that $x_c$ represents Cartesian coordinates and $x_h$ represents homogeneous coordinates. As we could see, the point $x_c=\lambda$ are represented by intersection between line $w=1$ and $x_h/w=x_c$. If $w=0$, $x_c\to\infty$. So homogeneous coordinates can represent point at infinity.
 
+For data more than one dimension, it's the same as above. We could see a picture from wiki to show the curve in two coordinates. 
 
-## The Literal Meaning of Matrix ##
+![Rational Bézier Curve – polynomial curve defined in homogeneous coordinates (blue) and its projection on plane – rational curve (red)](https://upload.wikimedia.org/wikipedia/commons/1/12/RationalBezier2D.svg)
 
-What does the entry values mean in matrix?
+In camera model, the position in camera ordinates has four dimension in homogeneous coordinates, which means the data is projected from 4D space to 3D space, or from volume to plane. So it can be summarized that:
 
-Think about the following equations:
-
-\begin{equation}
- \left[\begin{array}{cc}1 & 0 & 0 \end{array}\right]
-\begin{bmatrix}
-m_{11} & m_{12} & m_{13} \cr
-m_{21} & m_{22} & m_{23} \cr
-m_{31} & m_{32} & m_{33}
-\end{bmatrix} = 
-\left[\begin{array}{cc}m_{11} & m_{12} & m_{13} \end{array}\right]
-\end{equation}
-
-\begin{equation}
- \left[\begin{array}{cc}0 & 1 & 0 \end{array}\right]
-\begin{bmatrix}
-m_{11} & m_{12} & m_{13} \cr
-m_{21} & m_{22} & m_{23} \cr
-m_{31} & m_{32} & m_{33}
-\end{bmatrix} = 
-\left[\begin{array}{cc}m_{21} & m_{22} & m_{23} \end{array}\right]
-\end{equation}
-
-\begin{equation}
- \left[\begin{array}{cc}0 & 0 & 1 \end{array}\right]
-\begin{bmatrix}
-m_{11} & m_{12} & m_{13} \cr
-m_{21} & m_{22} & m_{23} \cr
-m_{31} & m_{32} & m_{33}
-\end{bmatrix} = 
-\left[\begin{array}{cc}m_{31} & m_{32} & m_{33} \end{array}\right]
-\end{equation}
-
-If the matrix is a transform, we could see that the three base vectors are exactly the same as three rows of matrix after the transform. **In other words,  the matrix could be considered as three vectors which are transformed from three base vectors in the original reference frame.**
-
-![](https://fanxiaochen.github.io/css/pics/matrix-literal-meaning.jpg)
-
-
-----------
-
-
-## Transform Between Different Reference Frames##
-
-We only talked about transforms in the same reference frame before. Now we need to think about transforms in different Frames which is an important problem in computer graphics.
-
-Given a 2d reference frame named $F_g$,  the base vectors are $\alpha_1 = \begin{array}{}[1 & 0]\end{array}$, $\alpha_2 = \begin{array}{}[0 & 1]\end{array}$ and the original point is $O_g = \begin{array}{}[0 & 0]\end{array}$, the new reference frame named $F_n$, the new base vectors are $\beta_1 = \begin{array}{}[m_1 & m_2]\end{array}$, $\beta_2 = \begin{array}{}[n_1 & n_2]\end{array}$ and the original point is $O_n = \begin{array}{}[o_1 & o_2]\end{array}$ which are all measured in the given frame $F_g$. Now given a point $P_g$ in $F_g$, what\'s the value $P_n$ in $F_n$?
-
-This problem is the basic setting of this part.
-
-From vector rules, we could get $\overrightarrow{\rm O_nP_n} = \overrightarrow{\rm O_nO_g} + \overrightarrow{\rm O_gP_g}$, that is 
-\begin{equation}
-(x_n * \beta_1 + y_n * \beta_2) = (O_g - O_n) + (x_g * \alpha_1 + y_g * \alpha_2)
-\end{equation}
-
-Matrix form:
-\begin{equation}
-\left[\begin{array}{cc}x_n & y_n\end{array}\right]
-\begin{bmatrix}
-m_1 & m_2 \cr
-n_1 & n_2
-\end{bmatrix} = 
-\left[\begin{array}{cc}-o_1 & -o_2\end{array}\right] + 
-\left[\begin{array}{cc}x_g & y_g\end{array}\right]
-\begin{bmatrix}
-1 & 0 \cr
-0 & 1
-\end{bmatrix}
-\end{equation}
-
-Homogeneous coordinates:
-\begin{equation}
-\left[\begin{array}{cc}x_n & y_n & 1\end{array}\right]
-\begin{bmatrix}
-m_1 & m_2 & 0 \cr
-n_1 & n_2 & 0 \cr
-0 & 0 & 1
-\end{bmatrix} = 
-\left[\begin{array}{cc}x_g & y_g & 1\end{array}\right]
-\begin{bmatrix}
-1 & 0 & 0 \cr 
-0 & 1 & 0 \cr
--o_1 & -o_2 & 1
-\end{bmatrix}
-\end{equation}
-
-So we could solve it and get the transform matrix $T$, let $P_n = P_g T$
-
-
-----------
-
-
+ - For **line** $(x,w)$ in homogeneous coordinates, the equivalent projection in Cartesian coordinates is a **point** $x$ at $w=1$.
+ - For **plane** $(x,y,w)$ in homogeneous coordinates, the equivalent projection in Cartesian coordinates is a **line** $(x,y)$ at $w=1$.
+ - For **volume** $(x,y,z,w)$ in homogeneous coordinates, the equivalent projection in Cartesian coordinates is a **plane** $(x,y,z,w)$ at $w=1$.
+ 
+ > Note that the "**equivalence**" means  "**same numeric values**" of all dimensions in mathematics. In camera projection, the z-axis of camera coordinates which are often focus length direction should be the w-dimension. **One is not required for focus length**, since there doesn't need to be same numeric values after projection.
+ 
 ## References ##
 
-- 3d primer for graphics and game development(3d数学基础：图形与游戏开发)
-
-
-
+ - [Homogeneous coordinates](https://en.wikipedia.org/wiki/Homogeneous_coordinates)
+ 
+ 
