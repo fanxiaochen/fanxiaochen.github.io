@@ -10,7 +10,8 @@ categories: math
 Homogeneous coordinates has one more dimension than Cartesian coordinates when represents the same position. For example $x = 2$,
 one dimension data for a point in Cartesian coordinates, is equivalent to a line in homogeneous coordinates as $\lambda(2, 1)$ or $x/w = 2$. So we realize that the original point $x=2$ in Cartesian coordinates is the projective point at $w=1$ of the line in homogeneous coordinates.
 
-## Geometric Meaning##
+## Geometric Meaning ##
+
 A simple drawing shows here, to visualize the meaning of homogeneous coordinates in geometry.
 
 ![Geometric Meaning of Homogeneous Coordinates](https://fanxiaochen.github.io/css/pics/homo-coords-meaning.jpg)
@@ -30,4 +31,5 @@ In camera model, the position in camera ordinates has four dimension in homogene
  > Note that the "**equivalence**" means  "**same numeric values**" of all dimensions in mathematics. In camera projection, the z-axis of camera coordinates which are often focus length direction should be the w-dimension. **One is not required for focus length**, since there doesn't need to be same numeric values after projection.
  
 ## References ##
+
  - [Homogeneous coordinates](https://en.wikipedia.org/wiki/Homogeneous_coordinates)

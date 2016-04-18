@@ -7,13 +7,13 @@ categories: math matrix
 
 
 
-###**Problem** ###
+## **Problem** ##
 Given $Ax=b$, where$A\in R^{m\times n}$, $x\in R^{n}$,  $b \in R^{m}$, what is the solution?
 
 
 ----------
 
-###**Solution** ###
+## **Solution** ##
 
 It has a little difference from $Ax=0$. There may be no solution or unique solution and more. What we should first think about here is augmented matrix $\tilde{A} = [ A \| b ]$ and to compare $rank(\tilde{A})$ and $rank(A)$.
 
@@ -30,7 +30,7 @@ So let\'s look about the case of existing solutions, which is much similar to th
 
 ----------
 
-###**Least Squares** ###
+## **Least Squares** ##
 
 What if there\'s no solution for $Ax = b$ in theory, namely $rank(\tilde{A}) > rank(A)$? That\'s what least squares does.
 
@@ -42,7 +42,7 @@ What we should realize is that if the blue dots all lie in the same red line, th
 
 ----------
 
-###**References** ###
+## **References** ##
 
  
 

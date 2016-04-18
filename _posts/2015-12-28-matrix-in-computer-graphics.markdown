@@ -112,6 +112,7 @@ So we could solve it and get the transform matrix $T$, let $P_n = P_g T$
 
 
 ## References ##
+
 - 3d primer for graphics and game development(3d数学基础：图形与游戏开发)
 
 

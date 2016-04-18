@@ -5,13 +5,13 @@ date:   2015-07-22 22:42:50
 categories: math matrix
 ---
 
-###**Problem** ###
+## **Problem** ##
 Given $Ax=0$, where$A\in R^{m\times n}$，$x\in R^{n}$, What is the solution?
 
 
 ----------
 
-###**Solution** ###
+## **Solution** ##
 
 Obviously the homogenous system always has the solution $x = 0$. But what about other solutions?
 
@@ -24,7 +24,7 @@ Obviously the homogenous system always has the solution $x = 0$. But what about 
 
 ----------
 
-###**Some Thoughts** ###
+## **Some Thoughts** ##
 
 > - ***Q***: Can $Ax = 0 \Rightarrow x = 0$ be true? <br>
 > - ***A***: From the solution part, we could see clearly that it\'s false.
@@ -38,7 +38,7 @@ Obviously the homogenous system always has the solution $x = 0$. But what about 
 
 ----------
 
-###**References** ###
+## **References** ##
 
  1. [http://www.math.ku.edu/~lerner/LAnotes/Chapter5.pdf](http://www.math.ku.edu/~lerner/LAnotes/Chapter5.pdf)
  2. [http://www.math.northwestern.edu/~clark/285/handouts/soln-set.pdf](http://www.math.northwestern.edu/~clark/285/handouts/soln-set.pdf)
