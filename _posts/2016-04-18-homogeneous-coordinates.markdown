@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Homogeneous Coordinates"
-date:  2016-4-18 19:51:50
+date:   2016-4-18 19:51:50
 categories: math
 ---
 
@@ -33,3 +33,5 @@ In camera model, the position in camera ordinates has four dimension in homogene
 ## References ##
 
  - [Homogeneous coordinates](https://en.wikipedia.org/wiki/Homogeneous_coordinates)
+ 
+ 

@@ -19,7 +19,7 @@ Summarize some frequently-used new features of C++11.
 
 More details in the references.
 
-##References##
+## References ##
 
 1. [深入理解C++11](http://book.douban.com/subject/24738301/)
 2. [https://en.wikipedia.org/wiki/C%2B%2B11](https://en.wikipedia.org/wiki/C++11)

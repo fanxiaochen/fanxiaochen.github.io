@@ -42,3 +42,5 @@ Obviously the homogenous system always has the solution $x = 0$. But what about 
 
  1. [http://www.math.ku.edu/~lerner/LAnotes/Chapter5.pdf](http://www.math.ku.edu/~lerner/LAnotes/Chapter5.pdf)
  2. [http://www.math.northwestern.edu/~clark/285/handouts/soln-set.pdf](http://www.math.northwestern.edu/~clark/285/handouts/soln-set.pdf)
+ 
+ 
