@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Test in Computer Graphics"
-date:   2015-12-28 18:38:50
+title:  "Homogeneous Coordinates"
+date:   2016-4-18 19:51:50
 categories: math
 ---
 
