@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Homogeneous Coordinates"
-date:   2016-04-18 19:51:50
-categories: math
+date:   2015-12-28 18:38:50
+categories: math matrix
 ---
 
 
