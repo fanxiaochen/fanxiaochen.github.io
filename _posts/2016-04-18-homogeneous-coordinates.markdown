@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Homogeneous Coordinates"
-date:   2016-04-19 20:06:50
+date:   2016-04-18 20:06:50
 categories: math
 ---
 
