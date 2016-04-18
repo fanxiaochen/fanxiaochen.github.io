@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Homogeneous Coordinates"
-date:   2016-04-19 00:06:50
+date:   2015-04-19 00:06:50
 categories: math matrix
 ---
 
