@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Homogeneous Coordinates"
-date:   2016-4-18 19:51:50
+date:   2016-04-18 19:51:50
 categories: math
 ---
+
+
 
 ## The Geometric Meaning of Matrix ##
 
