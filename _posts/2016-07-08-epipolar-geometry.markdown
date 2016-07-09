@@ -13,7 +13,7 @@ Given two cameras with different poses, what is the relationship between them?
 
 ![](https://fanxiaochen.github.io/css/pics/epipolar-geometry.png)
 
-From the camera model, we know the projection between 3d coordinates and image plane is that $x=f*\frac{X}{Z}$ and $y=f*\frac{Y}{Z}$. Assume $X_1$ and $X_2$ are the same space points in the two camera views, what we want to know is the transform between that, which is:
+From the camera model, we know the projection between 3d coordinates and image plane is that $x=f\frac{X}{Z}$ and $y=f\frac{Y}{Z}$. Assume $X_1$ and $X_2$ are the same space points in the two camera views, what we want to know is the transform between that, which is:
 
 \begin{equation}
 X_2 = RX_1+T
