@@ -57,7 +57,11 @@ Now if we consider the $x_2^TE$ as line parameters like $[a \ b \ c]$, and $x_1$
 l_1 : x_2^TE
 \end{equation}
 
-**However, here is a question I don\'t quite understand, which is that the line $l_1$ passes through $x_1$, but many lines do the same thing, why does it must be $l_1$?**
+**However,  the line $l_1$ passes through $x_1$, but many lines do the same thing, why does it must be epipolar line?**
+
+![](https://fanxiaochen.github.io/css/pics/epipolar-line.png)
+
+**We can see that, in the projection line, every points on the image are at the same position $x_2$, and decide the same line. As the space points are coplanar based on triangulation,  the decided line must be epipolar line $l_1$.**
 
 Since epipolar point $e_1$ lies in the line $l_1$, it has $x_2Ee_1=0$. As we could see that, **it belongs to all epipolar lines**. That is to say that no matter what $x_2$ is, the equation is forever established. So there exists:
 
